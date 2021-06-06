@@ -1,0 +1,283 @@
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),
+    url(/imgs/yeah.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0%;
+}
+
+.navbar {
+    display: flex;
+    padding: 40px 120px;
+    opacity: .8;
+}
+
+.navlogo img {
+    width: 200px;
+    height: 100px;
+    transition: 1.5s all;
+}
+
+.navlogo img:hover {
+    width: 220px;
+    height: 120px;
+}
+
+.navlink {
+    flex: 1;
+}
+
+.navlink ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.navlink ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    margin-top: 2em;
+}
+
+.navlink ul a {
+    color: yellowgreen;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Oswald";
+}
+
+.navlink ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: yellow ;
+    display: block;
+    margin: auto;
+    transition: 1s all;
+}
+
+.navlink ul li:hover::after {
+    width: 100%;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 0%;
+    background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s all linear;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.navlink .btn {
+    float: right;
+}
+
+.banner-title {
+    margin: 80px 130px;
+    color: #fff;
+}
+
+.banner-title h1{
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+.banner-title h1 span {
+    color: rgba(209, 47, 47, 0.842);
+    
+}
+
+.vert-bar {
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.search-icon {
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon .fa {
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icons {
+    height: 35%;
+    width: 80px;
+    background-color: red;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-icons .fa {
+    margin: 0%;
+    display: block;
+    padding: 8px;
+    border: 2px solid #fff;
+    color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notif {
+    display: flex;
+    width: 400px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: yellow;
+    align-items: center;
+    border-radius: 30px;
+    margin: 1rem;
+}
+
+.contents {
+    flex-basis: 50%;
+    padding: 10px;
+
+}
+
+.notif-img {
+    flex-basis: 50%;
+
+}
+
+.notif-img img {
+    width: 90%;
+    height: 50px;
+    transition: 1s all;
+}
+
+.notif-img img:hover{
+    width: 95%;
+    height: 55px;
+}
+
+.contents small {
+    font-family: "Oswald";
+}
+
+.contents a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin: 0 10px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 1s all;
+}
+
+.contents p {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.contents a:hover {
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgba(224, 22, 22, 0.671);
+}
+
+.navbar .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .vert-bar {
+        display: none;
+    }
+
+    .banner-title {
+        margin: 80px 40px;
+    }
+
+    #menuBtn {
+        position: fixed;
+    }
+
+    .banner-title h1 {
+        font-size: 50px;
+    }
+
+    .notif {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .navbar .fa {
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .navlink {
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        right: -200px;
+        top: 0;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 1s all;
+    }
+
+    .navlink ul a {
+        display: block;
+    }
+
+    .navlink .btn {
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ <i class="fa fa-facebook" id="wow"></i>
+                <i class="fa fa-instagram" id="wow"></i>
+                <i class="fa fa-twitterk" id="wow"></i>
+                <i class="fa fa-pinterest" id="wow"></i>

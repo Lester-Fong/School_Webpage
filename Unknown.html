@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Unofficial Site</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <div class="navlogo">
+                <img src="/imgs/123.jpg" alt="Welcome to Trimex">
+            </div>
+            <div class="navlink" id="navlinks">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="Unknown.html"><li>HOME</li></a>
+                    <a href="about.html"><li>ABOUT</li></a>
+                    <a href="#"><li>GAME</li></a>
+                    <a href="#"><li>PROGRAMS</li></a>
+
+                </ul>
+                <a href="about.html#contact">
+                    <button type="button" class="btn">SIGN UP</button> 
+                </a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+            <div class="banner-title">
+                <H1><span> Welcome to Trimex Colleges. <br> </span>
+                    The home of legendary people</H1>
+                <button type="button" class="btn">EXPLORE</button>
+            </div>
+        <div class="vert-bar">
+            <div class="search-icon">
+                <i class="fa fa-list-alt"></i>
+                <i class="fa fa-search"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitterk"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+            <div class="social-icons"></div>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitterk"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+            <div class="notif">
+                <div class="contents">
+                    <small>What are you waiting for? Come and see the beauty of our Institute
+                        Enroll now!
+                    </small>
+                    <p>
+                        <a href="">PREV</a>
+                        <a href="about.html">NEXT</a>
+                    </p>
+                </div>
+                <div class="notif-img">
+                    <img src="/imgs/trimex_logo.png" alt="Trimexlogo">
+                </div>
+            </div>
+    </div>
+
+    <Script>
+        let show = document.getElementById("navlinks");
+
+        function showMenu () {
+            show.style.right = "0";
+
+        }
+
+        function closeMenu () {
+            show.style.right = "-200px";
+            
+        }
+    </Script>
+
+</body>
+</html>
